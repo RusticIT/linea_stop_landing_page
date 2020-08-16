@@ -1,109 +1,262 @@
+*{
+    
+    font-family: sans-serif;
+}
 
-  *{
-    top: 0;
-    margin: 0;
-    left: 0;
-  }
+.header{
+   
+    background: linear-gradient(to bottom, #0092FD4D, #0A1944),
+    url("images/image-header-3.jpg");
+    background-position: right;
+    width: 100%;
+    height: 600px;
+    border-radius: 0px 0px 75px 75px;
+    margin-bottom: 300px;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 60%;
+    height: 60%;
+    
+}
 
-  header{
-  
-    /* width: 100%; */
-    min-height: 100vh;
-    background-image: url("images/image-header-3.jpg");
-    background-repeat: no-repeat;
+.badge{
+    text-align: center;
+}
+.badge img{
+    width: 60%;
+    height: 60%;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 300px;
+    
+}
+.titulo h1{
+    font-size: 3rem;
+    color: #0092FD;
+}
+
+.titulo-contenido h1{
+    font-size: 3rem;
+    color: #0092FD;
+}
+
+.prueba{
+    text-align: center;
+}
+
+.imagen-propuesta-1{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #0092FD4D, #0A1944),
+    url('images/propuesta-01.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    border-radius: 0px 0px 75px 75px;
 
-  }
+}
 
-  header::before{
-    content: "";
+.imagen-propuesta-2{
     width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#0092FD,#0A1944);
-    opacity: 0.3;
-    border-radius: 0px 0px 75px 75px;
-  }
+    height: 400px;
+    background-image: linear-gradient(to bottom, #0092FD4D, #0A1944),
+    url('images/propuesta-02.jpg');
+    background-size: cover;
+    background-position: center;
 
-  
-  .presentacion, .badge-play-store{
+}
+.imagen-propuesta-3{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #0092FD4D, #0A1944),
+    url('images/propuesta-03.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.overlay{
     position: relative;
-    display: inline-block;
-  }
-  
-  .presentacion img{
-    width: 50%;
-    height: auto;
-    margin-left: 128px;
-    margin-top: 60px;
-  }
-
-  header .badge-play-store{
-   float: right;
-   text-align: right;
-   margin-top: 60px;
-   margin-right: 60px;
-  }
-
-  .badge-play-store img {
-    width: 50%;
-    height: 50%;
-  }
-
-.propuesta{
-  text-align: center;
-  font-size: 3.1rem;
-  font-weight: bold;
-  margin-top: 80px;
-  font-family: sans-serif;
-  color: #0092FD;
+    color: white;
+    font-family: sans-serif;
+    margin-top: -90px;
+    margin-left: 5px;
+    font-size: 2rem;
 }
 
-.subtitulo{
-  color:#0A1944;
-  font-size: 2.8rem;
-  margin-top: 60px;
+.badge-play{
+    margin-top: -140px;
 }
 
-.container-article img{
-  display: inline-block;
-  width: 60%;
-  height: auto;
+.video iframe{
+    border-radius: 30px 30px 30px 30px;
 }
 
- .article-item{
-  display: inline-block;
-  margin-right: 2px;
-  width: 30%;
-  
-  margin-top: 80px;
- }  
+@media screen and (max-width: 800px){
 
-.article-item img{
-  width: 100%;
-  height: auto;
+    .subtitulo{
+        text-align: center;
+        margin-top: 100px;
+        color: #0A1944;
+        font-size: 1.5rem;
+    }
+    .badge-play img{
+        width: 80%;
+        height: 80%;
+    }
+    .video{
+        height: 300px;
+    }
+    .titulo-contenido{
+        text-align: center;
+    }
+
+    .img-imp-1{
+        width: 90%;
+        background-image:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+            url('images/smaug.jpg');
+            background-position: center;
+        height: 100%;
+        height: 400px;
+        background-size: cover;
+        padding: 17px;
+    }
+    .overlay-imp{
+        position:relative;
+        margin-top: -190px;
+        margin-left: 5px;
+        font-size: 1.5rem;
+    }
+    .img-imp-2{
+        width: 90%;
+        background-image:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+            url('images/steps.jpg');
+            background-position: center;
+        height: 100%;
+        height: 400px;
+        background-size: cover;
+        padding: 17px;
+    }
+    .logo img{
+        width: 60%;
+        height: 60%;
+        margin-top: 100px;
+    }
+    
 }
-.badge-play img{
-  width: 25%;
-  height: 25%;
-  
+ 
+@media screen and (max-width: 1026px ){
+    .footer{
+        display: none;
+    }
 }
 
-.video, .testimonios{
-  text-align: center;
-  font-size: 3.7rem;
-  font-weight: bold;
-  margin-top: 80px;
-  font-family: sans-serif;
-  color: #0092FD;
-}
-iframe{
-  margin-top: 50px;
-  border-radius: 84px 84px 84px 84px;
+@media screen and (min-width: 800px){
+    .titulo{
+        text-align: center;
+        margin-top: 300px;
+        margin-left: 25%;  
+    }
 
+    .titulo h1{
+        font-size: 4rem; 
+    }
+
+    .subtitulo{
+        text-align: center;
+        margin-top: 200px;
+        color: #0A1944;
+        
+    }
+    .subtitulo h2{
+        font-size: 3rem;
+    }
+
+    .badge-play{
+        margin-top: -200px;
+    }
+
+    .titulo-contenido{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 25%;
+    }
+    .titulo-contenido h1{
+        font-size: 4rem; 
+    }
+    .badge-play img{
+        width: 30%;
+        height: 30%;    
+    }
+    .video{
+        height: 600px;
+    }
+    .img-imp-1{
+        width: 30%;
+        background-image:url('images/smaug.jpg');
+            background-position: center;
+        height: 20%;
+        height: 400px;
+        background-size: cover;
+        padding: 17px;
+        float: right;
+        border-radius: 75px 0px 0px 75px ;
+        margin-bottom: 200px;
+    }
+
+    .img-imp-2{
+        width: 30%;
+        background-image:url('images/steps.jpg');
+            background-position: center;
+        height: 20%;
+        height: 400px;
+        background-size: cover;
+        padding: 17px;
+        float: left;
+        border-radius: 0px 75px 75px 0px ;
+    }
+    .overlay-imp{
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+    .footer{
+        background-color: #0092FD ;
+        border-radius: 75px 75px 0px 0px;
+    }
+
+
+    .titulo-footer{
+        text-align: center;
+    }
+    .footer h1{
+        color: white;
+        font-size: 2.5rem;
+    }
+    .footer h2{
+        color: white;
+        font-size: 2.4rem;
+    }
+    .titulo-header{
+        text-align:center;
+    }
+
+    .dejar-fumar h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .dejar-fumar h2{
+        font-size: 2.4rem;
+        text-align: center;
+        color: white;
+    }
+    
+    .badge-footer img{
+        float: center;
+        width: 80%;
+        height: 80%;
+    }
 }
