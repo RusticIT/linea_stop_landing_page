@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flexboxgrid.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="functions.js"></script>
     <title>Document</title>
 </head>
 
@@ -97,56 +98,60 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 testimonio">
                     <ul class="slider">
-                        <li id="slide1">
+                        <li class="slider-img fade" style="display: block;">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <img src="images/testimonio-1.jpg" alt="">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <h3 class="nombre-testimonio">Martin</h3>
-                                    <p class="parrafo-testimonio" > Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por completo. Muchísimas
-                                    gracias a todo el equipo por estar siempre a mi lado.</p>
+                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
                                 </div>
                             </div>
                         </li>
-                        <li id="slide2">
+                        <li class="slider-img fade">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <img src="images/testimonio-2.jpg" alt="">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <h3 class="nombre-testimonio">Anabella</h3>
-                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por completo. Muchísimas
-                                    gracias a todo el equipo por estar siempre a mi lado.</p>
+                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
                                 </div>
                             </div>
                         </li>
-                        <li id="slide3">
+                        <li class="slider-img fade">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <img src="images/testimonio-3.jpg" alt="">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <h3 class="nombre-testimonio">Juan</h3>
-                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por completo. Muchísimas
-                                    gracias a todo el equipo por estar siempre a mi lado.</p>
+                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
                                 </div>
                             </div>
                         </li>
-
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </ul>
                     <ul class="menu">
                         <li>
-                          <a href="#slide1">1</a>
+                            <a href="#slide1">1</a>
                         </li>
                         <li>
-                          <a href="#slide2">2</a>
+                            <a href="#slide2">2</a>
                         </li>
-                         <li>
-                          <a href="#slide3">3</a>
+                        <li>
+                            <a href="#slide3">3</a>
                         </li>
-                      </ul>
-
+                    </ul>
+                   
                 </div>
             </div>
             <div class="row importancia">
