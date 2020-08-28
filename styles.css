@@ -5,6 +5,36 @@
     font-family: sans-serif;
 }
 
+
+@media (max-width:480px)  { 
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        
+    }
+    .titulo{
+        margin-top: 200px!important;
+    }
+
+    .titulo-1{
+        margin-top: -10px!important;
+    }
+
+    .subtitulo-1{
+        margin-top: -40px!important;
+        margin-bottom: -10px!important;
+    }
+    iframe{
+        width: 90%!important;
+    }
+    
+}
+
+
+
 .header{
     background: linear-gradient(to bottom, #0092FD4D, #0A1944),
     url("images/image-header-3.jpg");
@@ -41,6 +71,17 @@
     font-size: 3rem;
     color: #0092FD;
 }
+
+.titulo-1{
+    text-align: center;
+    margin-top: 300px;
+    
+}
+.titulo-1 h1{
+    font-size: 3rem;
+    color: #0092FD;
+}
+
 
 .titulo-contenido h1{
     font-size: 3rem;
@@ -99,18 +140,34 @@
 
 @media screen and (max-width: 800px){
 
+    .img-nombre{
+        margin-top:40px;
+        margin-left: 5%;
+    }
+
     .subtitulo{
         text-align: center;
         margin-top: 100px;
         color: #0A1944;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        
+    }
+    .subtitulo-1{
+        text-align: center;
+        margin-top: 100px;
+        color: #0A1944;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        padding: 50px;
     }
     .badge-play img{
-        width: 80%;
-        height: 80%;
+        width: 70%;
+        height: 70%;
     }
     .video{
         height: 300px;
+        text-align: center;
     }
     .titulo-contenido{
         text-align: center;
@@ -126,12 +183,14 @@
         height: 400px;
         background-size: cover;
         padding: 17px;
+        margin-left: 17px;
     }
     .overlay-imp{
         position:relative;
         margin-top: -190px;
-        margin-left: 5px;
-        font-size: 1.5rem;
+        margin-left: 55px;
+        font-size: 1.2rem;
+        width: 70%;
     }
     .img-imp-2{
         width: 90%;
@@ -143,6 +202,7 @@
         height: 400px;
         background-size: cover;
         padding: 17px;
+        margin-left: 17px;
     }
     .logo img{
         width: 60%;
@@ -160,7 +220,7 @@
     }
     
     .importancia{
-        margin-top: 600px;
+        margin-top: 200px;
     }
     .slider{
         width: 100% !important;
@@ -184,14 +244,15 @@
       .slider{
         margin-left: 0%!important;
     }
-    /* .next {
-        margin-left: 300px!important;
-        border-radius: 3px 0 0 3px;
-      } */
 
       .nombre-testimonio{
         margin-top: -80px!important;
-        margin-left: 150px!important;
+        margin-left: 180px!important;
+        font-size: 2.6rem !important;
+      }
+      .parrafo-testimonio{
+          margin-top: 40px;
+          
       }
 }
  
@@ -204,23 +265,35 @@
 @media screen and (min-width: 800px){
     .titulo{
         text-align: center;
-        margin-top: 300px;
+        margin-top: 150px;
         margin-left: 25%;  
+    }
+    .titulo-1{
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 25%;  
+        margin-bottom: 20px;
     }
 
     .titulo h1{
-        font-size: 4rem; 
+        font-size: 3.5rem; 
     }
 
     .subtitulo{
         text-align: center;
         margin-top: 200px;
         color: #0A1944;
-        
+        font-size: 1.5rem;
     }
-    .subtitulo h2{
-        font-size: 3rem;
+    .subtitulo-1{
+        text-align: center;
+        margin-top: 40px;
+        color: #0A1944;
+        font-size: 1.5rem;
     }
+    /* .subtitulo, .subtitulo-1 h2{
+        font-size: 2rem!important;
+    } */
 
     .badge-play{
         margin-top: -200px;
@@ -239,7 +312,7 @@
         height: 30%;    
     }
     .video{
-        height: 600px;
+        height: 400px;
     }
     .img-imp-1{
         width: 30%;
@@ -354,28 +427,35 @@ ul.slider li {
 /* }  */ 
 
 
-/* .menu{
-    text-align: center;
-    margin: 20px;
+ .menu{
+     text-align: center;
+     margin: 20px;
   }
   
   .menu li{
     display: inline-block;
     text-align: center;
-  } */
+  }
 
-/* .menu li a{
+.menu li a{
     display: inline-block;
     color: rgb(255, 255, 255);
     font-weight: bolder;
     text-decoration: none;
-    background: linear-gradient(0.9turn, #B9E67E,#00EDFF,#0B1944);
     padding: 10px;
     width: 20px;
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
-  } */
+  } 
+  .titulo-footer{
+     margin-left: 90px;
+     margin-top: -10px;
+  }
+  .titulo-footer img{
+    width:100%;
+    height: auto;
+}
 
   .nombre-testimonio{
     color: #0B1944;
