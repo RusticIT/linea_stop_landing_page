@@ -8,16 +8,8 @@
 
 @media (max-width:480px)  { 
     
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        
-    }
-    .titulo{
-        margin-top: 200px!important;
-    }
+    
+    
 
     .titulo-1{
         margin-top: -10px!important;
@@ -33,7 +25,27 @@
     
 }
 
-
+@media (max-width:1024px) { 
+    .row{
+        width: 100%;
+    }
+    
+    body{
+        background-color: greenyellow;
+    }
+    .logo img{
+        width: 40%!important;
+        height: 40%!important;
+        
+    }
+    .badge img{
+        width: 40%!important;
+        height: 40%!important;
+    }
+    .titulo-1{
+        margin-left: 0;
+    }
+}
 
 .header{
     background: linear-gradient(to bottom, #0092FD4D, #0A1944),
@@ -44,6 +56,9 @@
     height: 600px;
     border-radius: 0px 0px 15px 15px;
     margin-bottom: 300px;
+}
+.container{
+    width: 100%;
 }
 .logo{
     text-align: center;
@@ -64,7 +79,7 @@
 
 .titulo{
     text-align: center;
-    margin-top: 300px;
+    margin-top: 15%;
     
 }
 .titulo h1{
@@ -185,7 +200,7 @@
         padding: 17px;
         margin-left: 17px;
     }
-    .overlay-imp{
+    .overlay-imp-izq, .overlay-imp-der{
         position:relative;
         margin-top: -190px;
         margin-left: 55px;
@@ -255,8 +270,20 @@
           
       }
 }
+
+@media screen and (min-width: 1024px ){
+    .titulo{
+        margin-left: 25%;
+        margin-top: 20%!important;
+    }
+
+    .titulo-1{
+        margin-left: 25%;
+        
+    }
+}
  
-@media screen and (max-width: 1026px ){
+@media screen and (max-width: 1024px ){
     .footer{
         display: none;
     }
@@ -266,12 +293,12 @@
     .titulo{
         text-align: center;
         margin-top: 150px;
-        margin-left: 25%;  
+         
     }
     .titulo-1{
         text-align: center;
         margin-top: 150px;
-        margin-left: 25%;  
+          
         margin-bottom: 20px;
     }
 
@@ -338,14 +365,27 @@
         float: left;
         border-radius: 0px 20px 20px 0px ;
     }
-    .overlay-imp{
-        font-size: 1.4rem;
+    .overlay-imp-der{
+        font-size: 1.1rem;
         padding: 12px;
+        width: 20%;
+        margin-left: 50%;
+        margin-top: -11px;
         
+    }
+
+    .overlay-imp-izq{
+        font-size: 1.1rem;
+        padding:12px;
+        width: 27%;
+        margin-left: 31%;
+        margin-top: -11px;
     }
     .footer{
         background-color: #0092FD ;
         border-radius: 75px 75px 0px 0px;
+        width: 100%;
+        margin: 0;
     }
 
 
