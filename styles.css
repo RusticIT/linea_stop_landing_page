@@ -8,7 +8,9 @@
 
 @media (max-width:480px)  { 
     
-    
+    .titulo{
+        margin-top: 72%!important;
+    }
     
 
     .titulo-1{
@@ -30,9 +32,7 @@
         width: 100%;
     }
     
-    body{
-        background-color: greenyellow;
-    }
+    
     .logo img{
         width: 40%!important;
         height: 40%!important;
@@ -48,13 +48,13 @@
 }
 
 .header{
-    background: linear-gradient(to bottom, #0092FD4D, #0A1944),
+    background: linear-gradient(to bottom, #0094fd48, #0a19444b),
     url("images/image-header-3.jpg");
     background-size: cover;
     background-position: right;
     width: 100%;
     height: 600px;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 75px 75px;
     margin-bottom: 300px;
 }
 .container{
@@ -73,8 +73,8 @@
     text-align: center;
 }
 .badge img{
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
 }
 
 .titulo{
@@ -153,6 +153,10 @@
     border-radius: 30px 30px 30px 30px;
 }
 
+.overlay-imp-izq, .overlay-imp-der{
+    color: #2E2E2E;
+}
+
 @media screen and (max-width: 800px){
 
     .img-nombre{
@@ -206,6 +210,7 @@
         margin-left: 55px;
         font-size: 1.2rem;
         width: 70%;
+        color: #2E2E2E;
     }
     .img-imp-2{
         width: 90%;
@@ -225,7 +230,7 @@
         margin-top: 100px;
     }
     .menu{
-        margin-top: 300px !important;
+        margin-top: 30% !important;
     }
     
     .slider li img{
@@ -261,9 +266,9 @@
     }
 
       .nombre-testimonio{
-        margin-top: -80px!important;
-        margin-left: 180px!important;
-        font-size: 2.6rem !important;
+        margin-top: -60px!important;
+        margin-left: 49%!important;
+        font-size: 2.4rem !important;
       }
       .parrafo-testimonio{
           margin-top: 40px;
@@ -287,12 +292,78 @@
     .footer{
         display: none;
     }
+    .titulo-footer{
+        display: none!important;
+    }
+    .footer h1{
+        display: none!important;
+    }
+    .footer h2{
+        display: none!important;
+    }
+    .titulo-header{
+        display: none!important;
+    }
+
+    .dejar-fumar h1{
+        display: none!important;
+    }
+    .dejar-fumar h2{
+        display: none!important;
+    }
+    
+    .badge-footer img{
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        background-color: #0092FD ;
+        border-radius: 75px 75px 0px 0px;
+        width: 100%;
+        margin: 0;
+        display: flex;
+    align-items: center;
+    }
+
+
+    .titulo-footer{
+        text-align: center;
+    }
+    .footer h1{
+        color: white;
+        font-size: 2.5rem;
+    }
+    .footer h2{
+        color: white;
+        font-size: 2.4rem;
+    }
+    .titulo-header{
+        text-align:center;
+    }
+
+    .dejar-fumar h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .dejar-fumar h2{
+        font-size: 2.4rem;
+        text-align: center;
+        color: white;
+    }
+    
+    .badge-footer img{
+        float: center;
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media screen and (min-width: 800px){
     .titulo{
         text-align: center;
-        margin-top: 150px;
+        margin-top: 15%;
          
     }
     .titulo-1{
@@ -381,44 +452,7 @@
         margin-left: 31%;
         margin-top: -11px;
     }
-    .footer{
-        background-color: #0092FD ;
-        border-radius: 75px 75px 0px 0px;
-        width: 100%;
-        margin: 0;
-    }
-
-
-    .titulo-footer{
-        text-align: center;
-    }
-    .footer h1{
-        color: white;
-        font-size: 2.5rem;
-    }
-    .footer h2{
-        color: white;
-        font-size: 2.4rem;
-    }
-    .titulo-header{
-        text-align:center;
-    }
-
-    .dejar-fumar h1{
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .dejar-fumar h2{
-        font-size: 2.4rem;
-        text-align: center;
-        color: white;
-    }
     
-    .badge-footer img{
-        float: center;
-        width: 80%;
-        height: 80%;
-    }
 
     
 }
@@ -506,7 +540,7 @@ ul.slider li {
   }
 
   .parrafo-testimonio{
-    color: #440b0b;
+    color: #2E2E2E;
     font-size: 1.5rem;
     margin-left: 20px;
   }
