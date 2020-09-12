@@ -39,12 +39,33 @@
         
     }
     .badge img{
-        width: 40%!important;
+        width: 252px!important;
         height: 40%!important;
     }
     .titulo-1{
         margin-left: 0;
     }
+    .slider li img{
+        width: 40% !important ;
+       
+        border-radius: 30px!important;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 100%!important;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        margin-left: -10px !important;
+        display:none !important;
+      }
 }
 
 .header{
@@ -140,7 +161,7 @@
     position: relative;
     color: white;
     font-family: sans-serif;
-    margin-top: -90px;
+    margin-top: -128px;
     margin-left: 5px;
     font-size: 2rem;
 }
@@ -209,6 +230,7 @@
         margin-top: -190px;
         margin-left: 55px;
         font-size: 1.2rem;
+        margin-bottom: 50px;
         width: 70%;
         color: #2E2E2E;
     }
@@ -225,19 +247,15 @@
         margin-left: 17px;
     }
     .logo img{
-        width: 60%;
+        width: 306px!important;
         height: 60%;
-        margin-top: 100px;
+        margin-top: 38px;
     }
     .menu{
         margin-top: 30% !important;
     }
     
-    .slider li img{
-        width: 40% !important ;
-       
-        border-radius: 30px!important;
-    }
+    
     
     .importancia{
         margin-top: 200px;
@@ -245,22 +263,7 @@
     .slider{
         width: 100% !important;
     }
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 100%!important;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: black;
-        font-weight: bold;
-        font-size: 25px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        margin-left: -10px !important;
-        display:none !important;
-      }
+    
       .slider{
         margin-left: 0%!important;
     }
@@ -272,6 +275,7 @@
       }
       .parrafo-testimonio{
           margin-top: 40px;
+          margin-left: 7%!important;
           
       }
 }
@@ -543,6 +547,7 @@ ul.slider li {
     color: #2E2E2E;
     font-size: 1.5rem;
     margin-left: 20px;
+    max-width: 70%;
   }
 
   .prev, .next {
