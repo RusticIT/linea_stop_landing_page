@@ -4,54 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flexboxgrid.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Linea Stop</title>
+    <script src="functions.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="presentacion">
-            <img src="images/imagen-logo.svg" alt="">
-        </div>
-        <div class="badge-play-store">
-            <a href="http://www.youtube.com"><img src="images/google-play-badge-1.png" alt=""></a>
-        </div>
-        </section>
-    </header>
-    <br>
-    <section class="propuesta">
-        <h1>Nuesta propuesta</h1>
-        <div class="container-article">
-            <div class="article-item">
-                <img src="images/Grupo 59.png" alt="apoyo">
+    <div class="header">
+        <div class="container">
+            <header class="row">
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="logo">
+                        <img src="images/imagen-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="badge">
+                        <img src="images/google-play-badge-1.png" alt="">
+                    </div>
+                </div>
+            </header>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo">
+                    <h1>Nuestra Propuesta</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
+                    <div class="imagen-propuesta-1">
+                    </div>
+                    <p class="overlay">Apoyo y tratamiento para dejar de fumar</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
+                    <div class="imagen-propuesta-2">
+
+                    </div>
+                    <p class="overlay">Contenidos multimedia especializados</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
+                    <div class="imagen-propuesta-3">
+
+                    </div>
+                    <p class="overlay">Contacto fácil y sencillo con especialistas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
+                    <h2>Inicia ya tu experiencia completamente gratis</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
+                    <div class="badge-play">
+                        <img src="images/google-play-badge-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
+                    <h1>Nuestros contenidos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+                    <div class="video">
+                        <iframe width="80%" height="100%" src="https://www.youtube.com/embed/zSxstEQ7ENo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
 
-            <div class="article-item">
-                <img src="images/Grupo 60.png" alt="contenidos">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo-1">
+                    <h2>Podras ver todos nuestros contenidos desde la app</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
+                    <div class="badge-play">
+                        <img src="images/google-play-badge-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
+                    <h1>Que dicen de nosotros</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 testimonio">
+                    <ul ontouchstart="swipe()" ontouchend="end()" id="slider" class="slider">
+                        <li class="slider-img fade" style="display: block;">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
+                                    <img src="images/testimonio-1.jpg" alt="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h3 class="nombre-testimonio">Martin</h3>
+                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-img fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
+                                    <img src="images/testimonio-2.jpg" alt="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h3 class="nombre-testimonio">Anabella</h3>
+                                    <p  class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-img fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
+                                    <img src="images/testimonio-3.jpg" alt="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                    <h3 class="nombre-testimonio">Juan</h3>
+                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
+                                        vida cambió por completo. Muchísimas
+                                        gracias a todo el equipo por estar siempre a mi lado.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <a style="background-color:#0B1944"></a>
+                        </li>
+                        <li>
+                            <a style="background-color:#076A8B"></a>
+                        </li>
+                        <li>
+                            <a style="background-color:#00E9FB"></a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="row importancia">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
+                    <h1>Por qué es importante</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="img-imp-1">
+                    </div>
+                    <p class="overlay-imp-der" >De acuerdo a la Encuesta Nacional de Factores de Riesgo de Argentina del año
+                        2018 el 22% de las personas adultas son fumadoras y 3 de cada 10 personas comparten hogares o
+                        trabajos donde se fuma. <br><br> Estos factores de riesgo generan ausentismo por enfermedades,
+                        internaciones y mayor consumo de estudios o tratamientos, con incremento de costos.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="img-imp-2">
+                    </div>
+
+                    <p class="overlay-imp-izq">Acompañar y efectuar un control sistemático personalizado de la evolución de
+                        cada personas es nuestro compromiso, apoyados por la evidencia científica y práctica. <br><br>
+                        Nuestra
+                        aplicación esta preparada para acompañarte con PERSONAS CAPACITADAS REALES, que se comunicarán
+                        contigo en forma personalizada para acompañarte y ayudarte a tomar las mejores decisiones para
+                        dejar de fumar. Y mucho más, podemos acompañarte en otras necesidades que muchas veces acompañan
+                        al tabaco: diabetes, hipertensión, sobrepeso, etc. porque queremos que sepas: DEJAR DE FUMAR
+                        TAMBIÉN ES CAMBIAR DE VIDA</p>
+                </div>
             </div>
 
-            <div class="article-item">
-                <img src="images/Grupo 61.png" alt="contactos">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
+                    <h2>Prueba nuestra aplicación completamente gratis</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
+                    <div class="badge-play">
+                        <img src="images/google-play-badge-1.png" alt="">
+                    </div>
+                </div>
             </div>
 
-            <h2 class="subtitulo">Inicia ya tu experiencia, completamente gratis.</h2>
 
-            <div class="badge-play">
-                <a href="http://www.youtube.com"><img src="images/google-play-badge.png" alt="google-play"></a>
-            </div>
         </div>
-    </section>
-    <section class="video">
-        <h1 >Nuestros contenidos </h1>
-        <iframe width="1470" height="750" src="https://www.youtube.com/embed/qZuxPKUVGiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2 class="subtitulo">Podrás ver todos nuestros contenidos desde la app</h2>
-        <div class="badge-play">
-            <a href="http://www.youtube.com"><img src="images/google-play-badge.png" alt="google-play"></a>
+        <div class="row footer">
+
+            <div class="col-lg-3 col-md-3">
+                <div class="titulo-footer">
+                    <img src="images/Logo_footer.svg" alt="">
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="dejar-fumar">
+                    <h1>DEJAR DE FUMAR ES POSIBLE</h1>
+                    <h2>Contactanos desde la app</h2>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="badge-footer">
+                    <img src="images/google-play-badge-1.png" alt="">
+                </div>
+
+            </div>
+
         </div>
-    </section>
-    <section class="testimonios">
-        <h1>Que dicen de nosotros</h1>
-    </section>
+    </div>
+
 </body>
 
 </html>
