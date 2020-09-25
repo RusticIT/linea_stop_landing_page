@@ -7,10 +7,10 @@
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.044" y2="0.054" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#b9e67e"/>
-      <stop offset="0.414" stop-color="#00edff"/>
-      <stop offset="1" stop-color="#0b1944"/>
+    <linearGradient id="linear-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0b1944"/>
+      <stop offset="50%" stop-color="#00edff"/>
+      <stop offset="100%" stop-color="#b9e67e"/>
     </linearGradient>
     <filter id="Unión_1" x="0" y="486" width="637" height="114" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
