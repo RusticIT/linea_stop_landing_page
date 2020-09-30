@@ -1,46 +1,51 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const next = document.querySelector("next");
+const prev = document.querySelector("previous");
 
-// Next/previous controls
+var slideTestimony = 1;
+showTestimony(slideTestimony);
+
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showTestimony((slideTestimony += n));
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showTestimony((slideTestimony = n));
 }
 
-function showSlides(n) {
+function showTestimony(n) {
   var i;
-  var slides = document.getElementsByClassName("slider-img");
+  var slides = document.querySelectorAll("testimonio");
   console.log(slides);
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideTestimony = 1;
+  }
+  if (n < 1) {
+    slideTestimony = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideTestimony - 1].style.display = "block";
 }
-var inicio = 0;
+// var inicio = 0;
 
-function swipe() {
-  var x = event.touches[0].clientX;
-  
-  console.log(x);
-  inicio = x;
- 
-}
+// function swipe() {
+//   var x = event.touches[0].clientX;
 
-function end() {
-  var x = event.changedTouches[0].pageX;
-  swp = x * inicio;
-  
-  if (swp > 0){
-    plusSlides(1)
-  }
-  if (swp < 0){
-    plusSlides(-1)
-  }
-}
+//   console.log(x);
+//   inicio = x;
+
+// }
+
+// function end() {
+//   var x = event.changedTouches[0].pageX;
+//   swp = x * inicio;
+
+//   if (swp > 0){
+//     plusSlides(1)
+//   }
+//   if (swp < 0){
+//     plusSlides(-1)
+//   }
+// }
