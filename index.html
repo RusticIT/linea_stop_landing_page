@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Linea Stop</title>
   </head>
   <body>
@@ -79,11 +78,16 @@
       </div>
       <!-- testimonios -->
       <div class="testimonios-row">
-        <button><img class="previous" src="assets/previous.svg" /></button>
+        <button class="prev-button">
+          <img class="previous" src="assets/previous.svg" />
+        </button>
+
         <div class="testimonio">
-          <img class="testimonio-photo" src="assets/testimonio-1.jpg" />
+          <div>
+            <img class="testimonio-photo" src="assets/testimonio-1.jpg" />
+          </div>
           <div class="testimonio-column">
-            <h2>Martin</h2>
+            <h2>Martín</h2>
             <p>
               Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
               completo. Muchísimas gracias a todo el equipo por estar siempre a
@@ -92,34 +96,38 @@
           </div>
         </div>
 
-        <!-- <div>
-        <div>
-          <img src="assets\testimonio-2.jpg" alt="">
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-2.jpg" />
+          <div class="testimonio-column">
+            <h2>Anabella</h2>
+            <p>
+              Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
+              completo. Muchísimas gracias a todo el equipo por estar siempre a
+              mi lado.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2>Anabell</h2>
-          <p>
-            Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
-            completo. Muchísimas gracias a todo el equipo por estar siempre a mi
-            lado.
-          </p>
-        </div>
-      </div>
 
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-3.jpg" />
+          <div class="testimonio-column">
+            <h2>Juan</h2>
+            <p>
+              Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
+              completo. Muchísimas gracias a todo el equipo por estar siempre a
+              mi lado.
+            </p>
+          </div>
+        </div>
+
+        <button class="next-button">
+          <img class="next" src="assets/next.svg" />
+        </button>
+      </div>
       <div>
-        <div>
-          <img src="assets\testimonio-3.jpg" alt="">
-        </div>
-        <div>
-          <h2>Anabella</h2>
-          <p>
-            Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
-            completo. Muchísimas gracias a todo el equipo por estar siempre a mi
-            lado.
-          </p>
-        </div>
-      </div> -->
-        <button><img class="next" src="assets/next.svg" /></button>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
       </div>
     </section>
 
@@ -131,39 +139,31 @@
       </div>
       <!-- 1er p -->
       <div>
-        <div>
-          <p>
-            De acuerdo a la Encuesta Nacional de Factores de Riesgo de Argentina
-            del año 2018 el 22% de las personas adultas son fumadoras y 3 de
-            cada 10 personas comparten hogares o trabajos donde se fuma. Estos
-            factores de riesgo generan ausentismo por enfermedades,
-            internaciones y mayor consumo de estudios o tratamientos, con
-            incremento de costos.
-          </p>
-        </div>
-        <div>
-          <!-- <img src="\images\importante-1.jpg" alt=""> -->
-        </div>
+        <p>
+          De acuerdo a la Encuesta Nacional de Factores de Riesgo de Argentina
+          del año 2018 el 22% de las personas adultas son fumadoras y 3 de cada
+          10 personas comparten hogares o trabajos donde se fuma. EsEstos factes
+          riesgo generan ausentismo por enfermedades, internaciones y mayor
+          consumo de estudios o tratamientos, con incremento de costos.
+        </p>
+        <img class="importante-img" src="assets/importante-1.jpg" />
       </div>
       <!-- 2do p -->
       <div>
-        <div>
-          <p>
-            Acompañar y efectuar un control sistemático personalizado de la
-            evolución de cada personas es nuestro compromiso, apoyados por la
-            evidencia científica y práctica. Nuestra aplicación esta preparada
-            para acompañarte con PERSONAS CAPACITADAS REALES, que se comunicarán
-            contigo en forma personalizada para acompañarte y ayudarte a tomar
-            las mejores decisiones para dejar de fumar. Y mucho más, podemos
-            acompañarte en otras necesidades que muchas veces acompañan al
-            tabaco: diabetes, hipertensión, sobrepeso, etc. porque queremos que
-            sepas: DEJAR DE FUMAR TAMBIÉN ES CAMBIAR DE VIDA
-          </p>
-        </div>
-        <div>
-          <!-- <img src="\images\importante-2.jpg" alt=""> -->
-        </div>
+        <img class="importante-img" src="assets/importante-2.jpg" />
+        <p>
+          Acompañar y efectuar un control sistemático personalizado de la
+          evolución de cada personas es nuestro compromiso, apoyados por la
+          evidencia científica y práctica. Nuestra aplicación esta preparada
+          para acompañarte con PERSONAS CAPACITADAS REALES, que se comunicarán
+          contigo en forma personalizada para acompañarte y ayudarte a tomar las
+          mejores decisiones para dejar de fumar. Y mucho más, podemos
+          acompañarte en otras necesidades que muchas veces acompañan al tabaco:
+          diabetes, hipertensión, sobrepeso, etc. porque queremos que sepas:
+          DEJAR DE FUMAR TAMBIÉN ES CAMBIAR DE VIDA
+        </p>
       </div>
+
       <!-- google -->
       <div class="google-play">
         <h2>Prueba nuestra aplicación, completamente gratis</h2>
@@ -172,12 +172,14 @@
     </section>
 
     <!-- section footer -->
-    <footer>
+    <!-- <footer>
       <div></div>
       <div></div>
       <div>
         <button><img src="assets/google-play.png" /></button>
       </div>
-    </footer>
+    </footer> -->
   </body>
+  <link rel="stylesheet" href="style.css" />
+  <script src="functions.js"></script>
 </html>

@@ -1,51 +1,44 @@
-const next = document.querySelector("next");
-const prev = document.querySelector("previous");
+const prev = document.querySelector(".prev-button");
+const next = document.querySelector(".next-button");
 
-var slideTestimony = 1;
+const dots = document.querySelectorAll("span");
+
+let slides = document.querySelectorAll(".testimonio");
+let slideTestimony = 0;
+
 showTestimony(slideTestimony);
 
-function plusSlides(n) {
-  showTestimony((slideTestimony += n));
-}
+dots.forEach((element, indice) => {
+  element.addEventListener("click", function () {
+    currentSlide(indice);
+  });
+});
+
+prev.addEventListener("click", function () {
+  nextTestimony(-1);
+});
+
+next.addEventListener("click", function () {
+  nextTestimony(1);
+});
 
 function currentSlide(n) {
   showTestimony((slideTestimony = n));
 }
 
-function showTestimony(n) {
-  var i;
-  var slides = document.querySelectorAll("testimonio");
-  console.log(slides);
+function nextTestimony(n) {
+  showTestimony((slideTestimony += n));
+}
 
-  if (n > slides.length) {
-    slideTestimony = 1;
+function showTestimony(n) {
+  if (n > slides.length - 1) {
+    slideTestimony = 0;
   }
-  if (n < 1) {
-    slideTestimony = slides.length;
+  if (n < 0) {
+    slideTestimony = slides.length - 1;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideTestimony - 1].style.display = "block";
+  slides[slideTestimony].style.display = "block";
 }
-// var inicio = 0;
-
-// function swipe() {
-//   var x = event.touches[0].clientX;
-
-//   console.log(x);
-//   inicio = x;
-
-// }
-
-// function end() {
-//   var x = event.changedTouches[0].pageX;
-//   swp = x * inicio;
-
-//   if (swp > 0){
-//     plusSlides(1)
-//   }
-//   if (swp < 0){
-//     plusSlides(-1)
-//   }
-// }

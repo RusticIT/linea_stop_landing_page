@@ -6,15 +6,26 @@
 
 :root {
   /* colors */
-  --black: ;
+  --black: #2e2e2e;
   --dark-grey: #707070;
-  --grey: #e2e2e2;
-  --light-grey: #00000029;
-  --dark-blue: #0a1944;
-  --light-blue: #0092fd;
+  --light-grey: #e2e2e2;
+  --white: #ffffff;
+  --darker-blue: #0a1944;
+  --dark-blue: #0b1944;
+  --blue: #0092fd;
+  --ligth-blue: #00e9fb;
+  --blue-green: #076a8b;
+  --green: #6ee9b2;
+  --light-green: #b0e785;
+
+  /* opacity colors */
+  --transparent-grey: #00000029;
+  --transparent-blue: #0092fd4d;
+  --transparent-darker-blue: #0a19444d;
+
   /* linear gradient */
-  --lg-header: #0092fd4d, #0a19444d;
-  --lg-propuesta: #0092fd4d, var(--dark-blue);
+  --lg-header: var(--transparent-blue), var(--transparent-darker-blue);
+  --lg-propuesta: var(--transparent-blue), var(--darker-blue);
 }
 body {
   scroll-behavior: smooth;
@@ -44,7 +55,7 @@ h1,
 h2,
 h3 {
   font-family: "Segoe UI";
-  text-shadow: 0px 3px 6px var(--light-grey);
+  text-shadow: 0px 3px 6px var(--transparent-grey);
   text-align: center;
   cursor: default;
 }
@@ -54,15 +65,15 @@ p {
 }
 
 h1 {
-  color: var(--light-blue);
+  color: var(--blue);
 }
 
 h2 {
-  color: var(--dark-blue);
+  color: var(--darker-blue);
 }
 
 h3 {
-  color: var(--grey);
+  color: var(--light-grey);
   font-weight: normal;
   text-align: left;
   align-self: flex-end;
@@ -109,8 +120,10 @@ iframe {
   flex-direction: column;
 }
 
-.testimonio-row {
+.testimonio-row,
+.testimonio {
   flex-direction: row;
+  justify-content: center;
 }
 
 .testimonio-column {
@@ -122,12 +135,12 @@ iframe {
 .testimonio-photo {
   width: 20%;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 3px 3px 6px var(--light-grey);
+  box-shadow: 3px 3px 6px var(--transparent-grey);
 }
 
 .previous,
 .next {
-  color: var(--dark-blue);
+  color: var(--darker-blue);
   width: 3.5rem;
 }
 
@@ -137,6 +150,22 @@ iframe {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+span {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+.dot1 {
+  background-color: var(--blue-green);
+}
+.dot2 {
+  background-color: var(--ligth-blue);
+}
+.dot3 {
+  background-color: var(--green);
 }
 
 @media (min-width: 768px) {
@@ -179,5 +208,9 @@ iframe {
 
   .testimonio-column p {
     font-size: 1.3rem;
+    width: 50%;
+  }
+  .importante-img {
+    width: 20%;
   }
 }
