@@ -122,20 +122,25 @@ iframe {
   flex-direction: column;
 }
 
-.testimonio-row,
-.testimonio {
+.testimonios-row{
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.testimonio{
+  justify-content: space-evenly;
 }
 
 .testimonio-column {
   flex-direction: column;
   align-items: flex-start;
-  margin: 1rem 1rem;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .testimonio-photo {
-  width: 10rem;
+  width: 12rem;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 3px 3px 6px var(--transparent-grey);
 }
@@ -155,9 +160,6 @@ iframe {
 }
 span {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 5rem 2px;
   border-radius: 50%;
 }
 .dot0 {
@@ -192,7 +194,12 @@ span {
     margin-right: 4rem;
   }
   .hero {
-    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4rem;
+  }
+  .logo{
+    align-self: start;
   }
   .hero-google-play {
     width: 20%;
@@ -238,14 +245,19 @@ span {
     width: 40%;
     border-radius: 0 20px 20px 0;
   }
+  span{
+    height: 25px;
+    width: 25px;
+    margin: -3rem 15px;
+    align-self: stretch;
+  }
   .footer{
     flex-direction: row;
     height: 10vh;
     background-color: var(--blue);
     border-radius: 50px 50px 0 0;
     border: 0.5px solid var(--ligth-blue);
-    padding: 0.5rem 4rem;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .footer div{
     flex-direction: column;
