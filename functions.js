@@ -37,8 +37,9 @@ function showTestimony(n) {
   if (n < 0) {
     slideTestimony = slides.length - 1;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideTestimony].style.display = "block";
-}
+  slides.forEach(element => {
+    element.style.display = "none";
+  });
+
+  slides[slideTestimony].style.display = "contents";
+} 
