@@ -1,11 +1,10 @@
 const prev = document.querySelector(".prev-button");
 const next = document.querySelector(".next-button");
 
-const dots = document.querySelectorAll("span");
+let dots = document.querySelectorAll(".testimonio-span span");
 
 let slides = document.querySelectorAll(".testimonio");
 let slideTestimony = 0;
-
 showTestimony(slideTestimony);
 
 dots.forEach((element, indice) => {
@@ -40,6 +39,11 @@ function showTestimony(n) {
   slides.forEach(element => {
     element.style.display = "none";
   });
-
+  dots.forEach(element => {
+    element.style.height="25px";
+    element.style.width="25px";
+  });
   slides[slideTestimony].style.display = "contents";
+  dots[slideTestimony].style.height="30px";
+  dots[slideTestimony].style.width="30px";
 } 

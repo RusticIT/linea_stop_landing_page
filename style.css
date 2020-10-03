@@ -6,7 +6,7 @@
 
 :root {
   /* colors */
-  --black: #353535;
+  --black: #2E2E2E;
   --dark-grey: #707070;
   --light-grey: #e2e2e2;
   --white: #ffffff;
@@ -32,6 +32,7 @@ body {
 }
 
 section {
+  flex-direction: column;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -91,7 +92,6 @@ button:focus {
 }
 
 .propuesta div {
-  margin: 1rem 0.5rem;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -140,7 +140,6 @@ iframe {
 }
 
 .testimonio-photo {
-  width: 12rem;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 3px 3px 6px var(--transparent-grey);
 }
@@ -162,41 +161,37 @@ span {
   cursor: pointer;
   border-radius: 50%;
 }
-.dot0 {
+.dot0, .dot0-hero{
   background-color: var(--dark-blue);
 }
-.dot1 {
+.dot1, .dot1-hero{
   background-color: var(--blue-green);
 }
-.dot2 {
+.dot2, .dot2-hero{
   background-color: var(--ligth-blue);
 }
-.dot3 {
+.dot3, .dot3-hero{
   background-color: var(--green);
 }
-.dot4 {
+.dot4, .dot4-hero{
   background-color: var(--light-green);
 }
 
-.importante{
-  height: 150vh;
-}
-
-
-
 @media (min-width: 768px) {
-  section {
-    flex-direction: column;
-  }
-
   section:not(.hero):not(.importante):not(.footer){
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+  .importante{
+    height: 175vh;
   }
   .hero {
     justify-content: center;
     align-items: flex-start;
     padding: 0 4rem;
+  }
+  .hero-span{
+    display: none;
   }
   .logo{
     align-self: start;
@@ -211,6 +206,9 @@ span {
     flex-direction: row;
     height: 50%;
   }
+  .propuesta div{
+    margin: 1rem 0.5rem;
+  }
   h1 {
     margin-top: 2rem;
     font-size: 3.5rem;
@@ -220,22 +218,26 @@ span {
   }
   h3 {
     font-size: 1.8rem;
-    margin-bottom: 0.2rem;
-    margin-left: 0.2rem;
+    margin: 0.2rem 0.2rem;
   }
   .google-play img {
     width: 30%;
   }
-
   iframe{
-    width: 35rem;
-    height: 20rem;
+    width: 40rem;
+    height: 25rem;
   }
   p{
     font-size: 1.1rem;
   }
+  .testimonio-photo{
+    width: 15rem;
+  }
+  .testimonio-column{
+    margin-left: 0.5rem;
+  }
   .importante p{
-    margin: 0.5rem 4rem;
+    margin: 0.5rem 3.5rem;
   }
   .importante-one img{
     width: 40%;
@@ -249,7 +251,7 @@ span {
     height: 25px;
     width: 25px;
     margin: -3rem 15px;
-    align-self: stretch;
+    align-self: center;
   }
   .footer{
     flex-direction: row;
@@ -268,22 +270,106 @@ span {
     color: var(--white);
     font-size: 1.3rem;
     text-shadow: 2px 2px 3px var(--dark-blue);
-
   }
   .footer img{
    width: 10rem;
   }
 }
 @media (max-width: 768px){
+  section:not(.hero):not(.importante){
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  section:not(.hero):not(.contenidos):not(.testimonios):not(.hero-span):not(.importante){
+    height: 150vh;
+  }
+  .importante{
+    height: 200vh;
+  }
   .hero{
+    height: 85vh;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
   }
-  img{
-    width: 10%;
+  .logo{
+    width: 100%;
   }
-  iframe{
-    width: 10rem;
-    height: 10rem;
+  .hero-google-play{
+    width: 75%;
+  }
+  .hero-span{
+    height: 15vh;
+    align-items: center;
+  }
+  span{
+    height: 25px;
+    width: 25px;
+    align-self: stretch;
+    margin: 0rem 15px;
+  }
+
+  .google-play h2{
+    margin-bottom: 0.5rem;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem
+  }
+  .propuesta{
+    flex-direction: column;
+    height: 100%;
+  }
+  .propuesta div{
+    margin: 0.5rem 0;
+  }
+  button img{
+    width: 50%;
+  }
+  .testimonios{
+    justify-content: flex-start;
+  }
+  .testimonios-row{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .testimonio-column{
+    width: 100%;
+    height: 40vh;
+    justify-content: flex-start;
+  }
+  .testimonio-photo{
+    width: 25%;
+  }
+  .testimonios span{
+    margin: 0 15px;
+    align-self: center;
+  }
+  .next, .previous{
+    display: none;
+  }
+  .importante-one img, .importante-two img{
+    display: none;
+  }
+  .importante p{
+    margin: 0 2rem 1rem;
+    align-self: center;
+  }
+  .importante-one{
+    background: linear-gradient(to bottom, transparent, var(--white)), url("assets/importante-1.jpg"); 
+  }
+  .importante-two{
+    background: linear-gradient(to bottom, transparent, var(--white)), url("assets/importante-2.jpg"); 
+  }
+  .importante-one, .importante-two{
+    background-size: 100% 50%; 
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 8rem;
   }
   .footer{
     display: none;
