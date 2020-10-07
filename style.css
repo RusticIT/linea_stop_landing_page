@@ -45,14 +45,6 @@ div {
   display: flex;
 }
 
-.hero {
-  background: linear-gradient(var(--lg-header)), url("assets/header-bike.jpg");
-  background-size: cover;
-  background-position: right;
-  border-radius: 0px 0px 50px 50px;
-  border: 1px solid var(--dark-grey);
-}
-
 h1,
 h2,
 h3 {
@@ -135,7 +127,7 @@ iframe {
 .testimonio-column {
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 50%;
 }
 
@@ -186,6 +178,9 @@ span {
     height: 175vh;
   }
   .hero {
+    background: linear-gradient(to bottom, transparent 60%, var(--white)), linear-gradient(to right, var(--blue)50%, transparent 70%), url("assets/header.jpg");
+    background-size: contain;
+    background-position: right;
     justify-content: center;
     align-items: flex-start;
     padding: 0 4rem;
@@ -236,6 +231,9 @@ span {
   .testimonio-column{
     margin-left: 0.5rem;
   }
+  .testimonio-column h2{
+    margin-bottom: 0.5rem
+  }
   .importante p{
     margin: 0.5rem 3.5rem;
   }
@@ -272,7 +270,7 @@ span {
     text-shadow: 2px 2px 3px var(--dark-blue);
   }
   .footer img{
-   width: 10rem;
+   width: 7rem;
   }
 }
 @media (max-width: 768px){
@@ -287,6 +285,9 @@ span {
     height: 200vh;
   }
   .hero{
+    background: linear-gradient(to bottom, transparent 30%, var(--white)), url("assets/header.jpg");
+    background-size: cover;
+    background-position: right;
     height: 85vh;
     flex-direction: column;
     justify-content: center;
@@ -340,7 +341,6 @@ span {
   .testimonio-column{
     width: 100%;
     height: 40vh;
-    justify-content: flex-start;
   }
   .testimonio-photo{
     width: 25%;

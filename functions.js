@@ -1,17 +1,18 @@
 const prev = document.querySelector(".prev-button");
 const next = document.querySelector(".next-button");
-
 let dots = document.querySelectorAll(".testimonio-span span");
-
+let touchZone = document.querySelector(".testimonios-row");
+let xStart, xEnd;
 let slides = document.querySelectorAll(".testimonio");
 let slideTestimony = 0;
-showTestimony(slideTestimony);
 
 dots.forEach((element, indice) => {
   element.addEventListener("click", function () {
     currentSlide(indice);
   });
 });
+
+showTestimony(slideTestimony);
 
 prev.addEventListener("click", function () {
   nextTestimony(-1);
@@ -20,6 +21,23 @@ prev.addEventListener("click", function () {
 next.addEventListener("click", function () {
   nextTestimony(1);
 });
+
+touchZone.addEventListener("touchstart", function(e){
+  xStart = e.touches[0].clientX;
+})
+touchZone.addEventListener("touchend", function(e){
+  xEnd = e.changedTouches[0].clientX;
+  swipeTestimony();
+})
+
+function swipeTestimony() {
+  if (xStart < xEnd) {
+    nextTestimony(-1);
+  }
+  if (xStart > xEnd) {
+    nextTestimony(1)
+  }
+}
 
 function currentSlide(n) {
   showTestimony((slideTestimony = n));
