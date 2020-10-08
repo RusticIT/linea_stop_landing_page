@@ -190,6 +190,7 @@ span {
   }
   .logo{
     align-self: start;
+    margin-bottom: 1rem;
   }
   .hero-google-play {
     width: 20%;
@@ -270,7 +271,7 @@ span {
     text-shadow: 2px 2px 3px var(--dark-blue);
   }
   .footer img{
-   width: 7rem;
+   width: 9rem;
   }
 }
 @media (max-width: 768px){
