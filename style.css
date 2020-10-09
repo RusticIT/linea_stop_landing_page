@@ -74,12 +74,13 @@ h3 {
   align-self: flex-end;
 }
 
-button {
+a, button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  text-align: center;
 }
-button:focus {
+a:focus, button:focus {
   outline: none;
 }
 
@@ -254,7 +255,7 @@ span {
   }
   .footer{
     flex-direction: row;
-    height: 10vh;
+    height: 11vh;
     background-color: var(--blue);
     border-radius: 50px 50px 0 0;
     border: 0.5px solid var(--ligth-blue);
@@ -329,8 +330,8 @@ span {
   .propuesta div{
     margin: 0.5rem 0;
   }
-  button img{
-    width: 50%;
+  a img{
+    width: 50%; 
   }
   .testimonios{
     justify-content: flex-start;
