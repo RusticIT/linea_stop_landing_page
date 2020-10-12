@@ -221,10 +221,11 @@ span {
   }
   h2 {
     font-size: 2rem;
+    padding-bottom: 1rem;
   }
   h3 {
     font-size: 1.8rem;
-    margin: 0.5rem 0.5rem;
+    margin: 1rem;
   }
   .google-play img {
     width: 30%;
@@ -248,12 +249,14 @@ span {
   .importante p{
     margin: 0.5rem 4rem;
   }
-  .importante-one img{
-    width: 40%;
+  .importante-img-one {
+    background: center/cover url("assets/importante-1.jpg");
+    width: 150%;
     border-radius: 20px 0 0 20px;
   }
-  .importante-two img {
-    width: 40%;
+  .importante-img-two {
+    background: center/cover url("assets/importante-2.jpg");
+    width: 200%;
     border-radius: 0 20px 20px 0;
   }
   span{
