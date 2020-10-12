@@ -27,6 +27,7 @@
   --lg-header: var(--transparent-blue), var(--transparent-darker-blue);
   --lg-propuesta: var(--transparent-blue), var(--darker-blue);
 }
+
 body {
   scroll-behavior: smooth;
 }
@@ -170,6 +171,9 @@ span {
 }
 
 @media (min-width: 768px) {
+  :root {
+    font-size: calc(0.7vw + 0.7vh + .5vmin);
+  }
   section:not(.hero):not(.importante):not(.footer){
     margin-left: 4rem;
     margin-right: 4rem;
