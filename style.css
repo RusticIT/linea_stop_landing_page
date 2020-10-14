@@ -170,7 +170,7 @@ span {
   background-color: var(--light-green);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   :root {
     font-size: calc(0.7vw + 0.7vh + .5vmin);
   }
@@ -182,9 +182,7 @@ span {
     height: 175vh;
   }
   .hero {
-    background: linear-gradient(to bottom, transparent 60%, var(--white)), linear-gradient(to right, var(--blue)50%, transparent 70%), url("assets/header.jpg");
-    background-size: contain;
-    background-position: right;
+    background: linear-gradient(to bottom, transparent 60%, var(--white)), linear-gradient(to right, var(--blue)50%, transparent 70%), right/contain url("assets/header.jpg");
     justify-content: center;
     align-items: flex-start;
     padding: 0 4rem;
@@ -239,6 +237,7 @@ span {
   }
   .testimonio-photo{
     width: 15rem;
+    height: 15rem;
   }
   .testimonio-column{
     margin-left: 0.5rem;
@@ -298,9 +297,7 @@ span {
     height: 200vh;
   }
   .hero{
-    background: linear-gradient(to bottom, transparent 30%, var(--white)), url("assets/header.jpg");
-    background-size: cover;
-    background-position: right;
+    background: linear-gradient(to bottom, transparent 30%, var(--white)), center/cover url("assets/header.jpg");
     height: 85vh;
     flex-direction: column;
     justify-content: center;
@@ -379,15 +376,13 @@ span {
     align-self: center;
   }
   .importante-one{
-    background: linear-gradient(to bottom, transparent, var(--white)), url("assets/importante-1.jpg"); 
+    background: linear-gradient(to bottom, transparent, var(--white) 60%), center/cover url("assets/importante-1.jpg"); 
   }
   .importante-two{
-    background: linear-gradient(to bottom, transparent, var(--white)), url("assets/importante-2.jpg"); 
+    background: linear-gradient(to bottom, transparent, var(--white) 60%), center/cover url("assets/importante-2.jpg"); 
   }
   .importante-one, .importante-two{
-    background-size: 100% 50%; 
     background-repeat: no-repeat;
-    background-position: top;
     padding-top: 8rem;
   }
   .footer{
