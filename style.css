@@ -187,9 +187,6 @@ span {
     align-items: flex-start;
     padding: 0 4rem;
   }
-  .hero-span{
-    display: none;
-  }
   .logo{
     align-self: start;
     margin-bottom: 1rem;
@@ -243,6 +240,7 @@ span {
     margin-left: 0.5rem;
   }
   .testimonio-column h2{
+    margin-top: 1rem;
     margin-bottom: 0.5rem
   }
   .importante p{
@@ -290,7 +288,7 @@ span {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  section:not(.hero):not(.contenidos):not(.testimonios):not(.hero-span):not(.importante){
+  section:not(.hero):not(.contenidos):not(.testimonios):not(.importante){
     height: 150vh;
   }
   .importante{
@@ -298,7 +296,6 @@ span {
   }
   .hero{
     background: linear-gradient(to bottom, transparent 30%, var(--white)), center/cover url("assets/header.jpg");
-    height: 85vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -309,16 +306,6 @@ span {
   }
   .hero-google-play{
     width: 75%;
-  }
-  .hero-span{
-    height: 15vh;
-    align-items: center;
-  }
-  span{
-    height: 25px;
-    width: 25px;
-    align-self: stretch;
-    margin: 0rem 15px;
   }
 
   .google-play h2{
@@ -348,7 +335,7 @@ span {
     width: 50%; 
   }
   .testimonios{
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
   .testimonios-row{
     flex-direction: column;
