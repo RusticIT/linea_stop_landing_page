@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="142" viewBox="0 0 334 142">
+  <defs>
+    <filter id="LINEA_STOP" x="0" y="0" width="334" height="92" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#0b1944"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0b1944"/>
+      <stop offset="50%" stop-color="#00edff"/>
+      <stop offset="100%" stop-color="#b9e67e"/>
+    </linearGradient>
+    <filter id="Unión_1" x="2" y="75" width="332" height="67" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#0b1944"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_80" data-name="Grupo 80" transform="translate(-130.999 -4598.364)">
+    <g id="Grupo_30" data-name="Grupo 30" transform="translate(140 4604.364)">
+      <g id="Grupo_1" data-name="Grupo 1" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#LINEA_STOP)">
+          <text id="LINEA_STOP-2" data-name="LINEA STOP" transform="translate(167 66)" fill="#fff" font-size="56" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-157.514" y="0">LINEA STOP</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 131, 4598.36)" filter="url(#Unión_1)">
+      <path id="Unión_1-2" data-name="Unión 1" d="M265.251,24.5A24.375,24.375,0,1,1,289.625,49,24.438,24.438,0,0,1,265.251,24.5ZM0,44.676V4.323H255.214V44.676Z" transform="translate(11 81)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
