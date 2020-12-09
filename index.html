@@ -1,228 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="flexboxgrid.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="functions.js"></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="header">
-        <div class="container">
-            <header class="row">
-                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="logo">
-                        <img src="images/imagen-logo.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="badge">
-                        <img src="images/google-play-badge-1.png" alt="">
-                    </div>
-                </div>
-            </header>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo">
-                    <h1>Nuestra Propuesta</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
-                    <div class="imagen-propuesta-1">
-                    </div>
-                    <p class="overlay">Apoyo y tratamiento para dejar de fumar</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
-                    <div class="imagen-propuesta-2">
-
-                    </div>
-                    <p class="overlay">Contenidos multimedia especializados</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-bottom: 15%;">
-                    <div class="imagen-propuesta-3">
-
-                    </div>
-                    <p class="overlay">Contacto fácil y sencillo con especialistas</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
-                    <h2>Inicia ya tu experiencia completamente gratis</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
-                    <div class="badge-play">
-                        <img src="images/google-play-badge-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
-                    <h1>Nuestros contenidos</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
-                    <div class="video">
-                        <iframe width="80%" height="100%" src="https://www.youtube.com/embed/zSxstEQ7ENo"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo-1">
-                    <h2>Podras ver todos nuestros contenidos desde la app</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
-                    <div class="badge-play">
-                        <img src="images/google-play-badge-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
-                    <h1>Que dicen de nosotros</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 testimonio">
-                    <ul ontouchstart="swipe()" ontouchend="end()" id="slider" class="slider">
-                        <li class="slider-img fade" style="display: block;">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
-                                    <img src="images/testimonio-1.jpg" alt="">
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <h3 class="nombre-testimonio">Martin</h3>
-                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
-                                        vida cambió por completo. Muchísimas
-                                        gracias a todo el equipo por estar siempre a mi lado.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slider-img fade">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
-                                    <img src="images/testimonio-2.jpg" alt="">
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <h3 class="nombre-testimonio">Anabella</h3>
-                                    <p  class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
-                                        vida cambió por completo. Muchísimas
-                                        gracias a todo el equipo por estar siempre a mi lado.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slider-img fade">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img-nombre">
-                                    <img src="images/testimonio-3.jpg" alt="">
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                    <h3 class="nombre-testimonio">Juan</h3>
-                                    <p class="parrafo-testimonio"> Pude dejar de fumar en menos de lo que pensaba, mi
-                                        vida cambió por completo. Muchísimas
-                                        gracias a todo el equipo por estar siempre a mi lado.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </ul>
-                    <ul class="menu">
-                        <li>
-                            <a style="background-color:#0B1944"></a>
-                        </li>
-                        <li>
-                            <a style="background-color:#076A8B"></a>
-                        </li>
-                        <li>
-                            <a style="background-color:#00E9FB"></a>
-                        </li>
-                    </ul>
-                   
-                </div>
-            </div>
-            <div class="row importancia">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 titulo-1">
-                    <h1>Por qué es importante</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="img-imp-1">
-                    </div>
-                    <p class="overlay-imp-der" >De acuerdo a la Encuesta Nacional de Factores de Riesgo de Argentina del año
-                        2018 el 22% de las personas adultas son fumadoras y 3 de cada 10 personas comparten hogares o
-                        trabajos donde se fuma. <br><br> Estos factores de riesgo generan ausentismo por enfermedades,
-                        internaciones y mayor consumo de estudios o tratamientos, con incremento de costos.</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="img-imp-2">
-                    </div>
-
-                    <p class="overlay-imp-izq">Acompañar y efectuar un control sistemático personalizado de la evolución de
-                        cada personas es nuestro compromiso, apoyados por la evidencia científica y práctica. <br><br>
-                        Nuestra
-                        aplicación esta preparada para acompañarte con PERSONAS CAPACITADAS REALES, que se comunicarán
-                        contigo en forma personalizada para acompañarte y ayudarte a tomar las mejores decisiones para
-                        dejar de fumar. Y mucho más, podemos acompañarte en otras necesidades que muchas veces acompañan
-                        al tabaco: diabetes, hipertensión, sobrepeso, etc. porque queremos que sepas: DEJAR DE FUMAR
-                        TAMBIÉN ES CAMBIAR DE VIDA</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
-                    <h2>Prueba nuestra aplicación completamente gratis</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subtitulo">
-                    <div class="badge-play">
-                        <img src="images/google-play-badge-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Linea Stop. Dejar de fumar es posible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linea Stop</title>
+    <link rel="icon" type="image/png" href="assets/LS-logo.png">
+  </head>
+  <body>
+    <section class="hero">
+      <div>
+        <img class="logo" src="assets/imagen-logo.svg" alt=""/>
+      </div>
+      <div>
+        <a href='https://play.google.com/store/apps/details?id=com.lineastop.app'>
+          <img class="hero-google-play" src="assets/google-play.png" alt=""/>
+        </a>
+      </div>
+    </section>
+    
+    <section>
+      <div>
+        <h1>Nuestra propuesta</h1>
+      </div>
+      <div class="propuesta">
+        <div class="apoyo">
+          <h3>Apoyo y tratamiento para dejar de fumar y control de riesgos</h3>
         </div>
-        <div class="row footer">
-
-            <div class="col-lg-3 col-md-3">
-                <div class="titulo-footer">
-                    <img src="images/Logo_footer.svg" alt="">
-                    
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="dejar-fumar">
-                    <h1>DEJAR DE FUMAR ES POSIBLE</h1>
-                    <h2>Contactanos desde la app</h2>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="badge-footer">
-                    <img src="images/google-play-badge-1.png" alt="">
-                </div>
-
-            </div>
-
+        <div class="contenido">
+          <h3>Contenidos multimedia especializados</h3>
         </div>
+        <div class="contacto">
+          <h3>Contacto fácil y sencillo con especialistas</h3>
+        </div>
+      </div>
+      <div class="google-play">
+        <h2>Inicia ya tu experiencia, completamente gratis</h2>
+        <a href='https://play.google.com/store/apps/details?id=com.lineastop.app'><img src="assets/google-play.png" alt="" /></a>
+      </div>
+    </section>
+
+    <section class="contenidos">
+      <div>
+        <h1>Nuestros contenidos</h1>
+      </div>
+      <div>
+        <iframe title="Contenido Linea Stop" src="https://www.youtube.com/embed/XhycN89rk7A"></iframe>
+      </div>
+      <div class="google-play">
+        <h2>Podrás ver todos nuestros contenidos desde la app</h2>
+        <a href='https://play.google.com/store/apps/details?id=com.lineastop.app'><img src="assets/google-play.png" alt=""/></a>
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <div>
+        <h1>Qué dicen de nosotros</h1>
+      </div>
+      <div class="testimonios-row">
+        <button name="previous" aria-label="previous testimony" class="prev-button">
+          <img class="previous" src="assets/previous.svg" alt=""/>
+        </button>
+
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-pablo.png" alt=""/>
+          <div class="testimonio-column">
+            <h2>Pablo</h2>
+            <p>
+              Pude dejar de fumar en menos de lo que pensaba, mi vida cambió por
+              completo. Muchísimas gracias a todo el equipo por estar siempre a
+              mi lado.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-pato.png" alt=""/>
+          <div class="testimonio-column">
+            <h2>Pato</h2>
+            <p>
+              Gracias por acompañarme, fue bueno sentir que podía comunicarme 
+              y tener un apoyo a la distancia.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-alejandra.png" alt=""/>
+          <div class="testimonio-column">
+            <h2>Alejandra</h2>
+            <p>
+              Algunas veces estuve por dejar de intentarlo, pero tenía muchos 
+              motivos para dejar de fumar y tuve siempre una compañía en 
+              el teléfono que me ayudaba. ¡Gracias!
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonio">
+          <img class="testimonio-photo" src="assets/testimonio-fernanda.png" alt=""/>
+          <div class="testimonio-column">
+            <h2>Fernanda</h2>
+            <p>
+              Pensé que iba a ser mas difícil. Saber lo que me pasaba y 
+              como poder resolverlo me ayudó mucho. Gracias por estar.
+            </p>
+          </div>
+        </div>
+
+        <button name="next" aria-label="next testimony" class="next-button">
+          <img class="next" src="assets/next.svg" alt=""/>
+        </button>
+      </div>
+      <div class="testimonio-span">
+        <span class="dot0"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+    </section>
+
+    <section class="importante">
+      <div>
+        <h1>Por qué es importante</h1>
+      </div>
+      <div class="importante-one">
+        <p>
+          De acuerdo a la Encuesta Nacional de Factores de Riesgo de Argentina
+          del año 2018 el 22% de las personas adultas son fumadoras y 3 de cada
+          10 personas conviven en hogares o lugares de empleo donde se fuma. <br><br>
+          Estos factores de riesgo generan ausentismo por enfermedades, internaciones
+          y mayor consumo de estudios o tratamientos, con incremento de costos.
+        </p>
+        <div class="importante-img-one"></div>
+      </div>
+      <div class="importante-two">
+        <div class="importante-img-two"></div>
+        <p>
+          Acompañar y efectuar un control sistemático y personalizado de la
+          evolución de cada paciente es nuestro compromiso, apoyados por la
+          evidencia científica y práctica. <br><br>
+          Nuestra aplicación esta preparada para acompañarte con PERSONAS 
+          REALES CAPACITADAS, que se comunicarán contigo en forma personalizada 
+          para acompañarte y ayudarte a tomar las mejores decisiones 
+          para dejar de fumar. Y mucho más, podemos ayudarte en otras necesidades
+          que muchas veces acompañan al tabaco: diabetes, hipertensión, sobrepeso, etc.
+          Porque queremos que sepas: DEJAR DE FUMAR TAMBIÉN ES CAMBIAR DE VIDA.
+        </p>
+      </div>
+
+      <div class="google-play">
+        <h2>Prueba nuestra aplicación, completamente gratis</h2>
+        <a href='https://play.google.com/store/apps/details?id=com.lineastop.app'><img src="assets/google-play.png" alt=""/></a>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div>
+      <img src="assets/logo_footer.svg" alt=""/>
     </div>
-
-</body>
-
+      <div>
+        <p>DEJAR DE FUMAR ES POSIBLE</p>
+        <p>Contactanos descargando la app</p>
+      </div>
+      <div>
+      <a href='https://play.google.com/store/apps/details?id=com.lineastop.app'><img src="assets/google-play.png" alt=""/></a>
+    </div>
+    </section>
+  </body>
+  <link rel="stylesheet" href="style.css" />
+  <script src="functions.js"></script>
 </html>
