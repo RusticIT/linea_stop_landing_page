@@ -177,6 +177,9 @@ span {
 .dot4, .dot4-hero{
   background-color: var(--light-green);
 }
+.video {
+  justify-content: center;
+}
 
 @media (min-width: 769px) {
   :root {
