@@ -33,7 +33,7 @@
         <g id="Grupo_1" data-name="Grupo 1">
           <g transform="matrix(1, 0, 0, 1, -68.39, -6)" filter="url(#LINEA_STOP)">
             <text id="LINEA_STOP-2" data-name="LINEA
-STOP" transform="translate(319 195)" fill="#fff" font-size="175" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-250.922" y="0">LINEA</tspan><tspan x="-217.169" y="233">STOP</tspan></text>
+STOP" transform="translate(319 195)" fill="#fff" font-size="175" font-family="Opens Sans, sans-serif" font-weight="700"><tspan x="-250.922" y="0">LINEA</tspan><tspan x="-217.169" y="233">STOP</tspan></text>
           </g>
         </g>
       </g>
@@ -45,7 +45,7 @@ STOP" transform="translate(319 195)" fill="#fff" font-size="175" font-family="Se
       <g id="Grupo_1-2" data-name="Grupo 1" transform="translate(-691.387)">
         <g transform="matrix(1, 0, 0, 1, 56, -652)" filter="url(#DEJAR_DE_FUMAR_ES_POSIBLE)">
           <text id="DEJAR_DE_FUMAR_ES_POSIBLE-2" data-name="DEJAR DE FUMAR
-ES POSIBLE" transform="translate(318 723)" fill="#fff" font-size="66" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-278.599" y="0">DEJAR DE FUMAR</tspan><tspan x="-175.006" y="88">ES POSIBLE</tspan></text>
+ES POSIBLE" transform="translate(318 723)" fill="#fff" font-size="66"  font-family="Opens Sans, sans-serif" font-weight="700"><tspan x="-278.599" y="0">DEJAR DE FUMAR</tspan><tspan x="-175.006" y="88">ES POSIBLE</tspan></text>
         </g>
       </g>
     </g>
