@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "posthtml-expressions": "^1.7.1"
+  }
+}
