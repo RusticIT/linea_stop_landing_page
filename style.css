@@ -177,8 +177,9 @@ span {
 .dot4, .dot4-hero{
   background-color: var(--light-green);
 }
-.video {
+video {
   justify-content: center;
+  width: 70%;
 }
 
 @media (min-width: 769px) {
@@ -365,6 +366,9 @@ span {
   }
   .next, .previous{
     display: none;
+  }
+  video {
+    width: 100%;
   }
   .importante-one img, .importante-two img{
     display: none;
